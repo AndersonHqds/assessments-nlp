@@ -1,0 +1,20 @@
+{
+  "name": "assessments",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "devDependencies": {
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "nodemon": "^1.19.3",
+    "prettier": "^1.18.2"
+  },
+  "dependencies": {
+    "csv-parser": "^2.3.1",
+    "node-nlp": "^3.10.0"
+  }
+}
