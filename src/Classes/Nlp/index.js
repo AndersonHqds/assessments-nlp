@@ -22,11 +22,28 @@ class Nlp {
     });
   }
 
-  async predict() {
+  groupLinesInArray(lines) {
+    console.log(lines);
+  }
+
+  async predict(lines, headers) {
     await manager.train();
     manager.save();
-    const response = await manager.process('pt', 'As bios possuem senha?');
-    console.log(response);
+    if (!headers[process.env.ANSWER_COLUMN]) {
+      headers[process.env.ANSWER_COLUMN] = 'Respostas';
+    }
+
+    let response = lines.map(async (line) => (
+      {
+        ...line,
+        [headers[process.env.ANSWER_COLUMN]]: ((await manager
+          .process('pt', line[headers[process.env.QUESTION_COLUMN]])).answer)
+          ? (await manager.process('pt', line[headers[process.env.QUESTION_COLUMN]])).answer.response
+          : 'Sem Resposta',
+      }
+    ));
+    response = await Promise.all(response);
+    return response;
   }
 }
 

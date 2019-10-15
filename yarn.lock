@@ -731,6 +731,11 @@ csv-parser@^2.3.1:
     minimist "^1.2.0"
     ndjson "^1.4.0"
 
+csv-writer@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/csv-writer/-/csv-writer-1.5.0.tgz#86c669be32cdd55dc2b66d722a3906f562547884"
+  integrity sha512-Um27xYNzwI6iAXf96tz7j8nnabBbADeDd2cQ5gAjJaXyPrj3C7qX7uCI8Wp8Q+e9rRdkWQ+Sa1J6X5cDyInLWw==
+
 currently-unhandled@^0.4.1:
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/currently-unhandled/-/currently-unhandled-0.4.1.tgz#988df33feab191ef799a61369dd76c17adf957ea"
@@ -858,6 +863,11 @@ dot-prop@^4.1.0:
   integrity sha512-tUMXrxlExSW6U2EXiiKGSBVdYgtV8qlHL+C10TsW4PURY/ic+eaysnSkwB4kA/mBlCyy/IKDJ+Lc3wbWeaXtuQ==
   dependencies:
     is-obj "^1.0.0"
+
+dotenv@^8.1.0:
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-8.1.0.tgz#d811e178652bfb8a1e593c6dd704ec7e90d85ea2"
+  integrity sha512-GUE3gqcDCaMltj2++g6bRQ5rBJWtkWTmqmD0fo1RnnMuUqHNCt2oTPeDnS9n6fKYvlhn7AeBkb38lymBtWBQdA==
 
 doublearray@0.0.2:
   version "0.0.2"

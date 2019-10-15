@@ -1,2 +1,4 @@
 node_modules
 src/dataset_assessments.csv
+src/Csvs/*
+*.csv
